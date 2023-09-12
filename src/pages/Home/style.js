@@ -1,0 +1,105 @@
+import { StyleSheet, Dimensions } from "react-native";
+import colors from "../../constants/colors";
+
+const {width,height} = Dimensions.get("screen")
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor:colors.white,
+        padding:20,
+    },
+    sortContainer:{
+        borderWidth:1.5,
+        flexDirection:"row",
+        width:"45%",
+        height:36,
+        justifyContent:"space-evenly",
+        alignItems:"center",
+        borderTopLeftRadius:10,
+        borderBottomLeftRadius:10,
+        borderColor:colors.borderColor,
+    },
+    filterContainer:{
+        borderWidth:1.5,
+        flexDirection:"row",
+        width:"45%",
+        height:36,
+        justifyContent:"space-evenly",
+        alignItems:"center",
+        borderTopRightRadius:10,
+        borderBottomRightRadius:10,
+        borderColor:colors.borderColor
+    },
+    inContainer:{
+        flexDirection:"row",
+        justifyContent:"space-between"
+    },
+    image:{
+        width:68,
+        height:68,
+        borderRadius:4
+    },
+    sortAndFilter:{
+        flexDirection:"row",
+        justifyContent:"center",
+        marginBottom:20
+    },
+    title:{
+        color:colors.lightBlack,
+        fontSize:16,
+    },
+    email:{
+        fontSize:12,
+        color:colors.iconGray
+    },
+    itemRightContainer:{
+        marginLeft:10
+    },
+    number:{
+        fontSize:12,
+        color:colors.iconGray,
+        marginTop:14
+    },
+    userContainer:{
+        borderWidth:1,
+        padding:12,
+        borderRadius:12,
+        borderColor:colors.borderColor,
+        marginTop:15
+    },
+    leftContainer:{
+        flexDirection:"row"
+    },
+    modalContainer:{
+        width:width*.8,
+        height:height*.45,
+        backgroundColor:colors.white,
+        borderRadius:12,
+        padding:22,
+        borderWidth:1,
+        borderColor:colors.borderColor
+    },
+    modalInContainer:{
+        flexDirection:"row",
+        justifyContent:"space-between"
+    },
+    name:{
+        fontSize:20,
+        color:colors.lightBlack,
+        fontWeight:"600"
+    },
+    location:{
+        flexDirection:"row",
+        marginTop:25,
+    },
+    addressContainer:{
+       marginTop:12,
+    },
+    address:{
+        fontSize:16,
+        color:colors.title
+    }
+});
+
+export default styles;
